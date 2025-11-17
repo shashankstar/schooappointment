@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>Appointment+ | Vendor Appointments</title>
+    <!-- 1. Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 2. Use a clean, professional font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+        }
+        /* 3. Make the embed responsive */
+        .calendly-inline-widget {
+            height: 800px !important; /* Force height to show calendar */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+
+        <!-- --- BANNER (Updated Theme) --- -->
+        <div class="bg-purple-800 text-white p-6 rounded-lg shadow-lg mb-6 text-center">
+            <h1 class="text-3xl font-bold tracking-tight">Appointment+</h1>
+            <p class="text-sm text-purple-200 italic mt-1">"Let's not disturb academics."</p>
+        </div>
+        <!-- --- END BANNER --- -->
+
+        <!-- Header (Updated Text) -->
+        <header class="mb-6 text-center">
+            <h1 class="text-3xl font-bold text-gray-900">Streamline Your School's Vendor Meetings</h1>
+            <p class="text-lg text-gray-600">Please select an available slot below to book your 15-minute meeting. Slots are first come, first served.</p>
+        </header>
+
+        <!-- Calendly Embed (Your link is already in here) -->
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/mp4recruiter/15-minute-vendor-meeting" 
+             style="min-width:320px; height:700px;">
+        </div>
+        <!-- End of Embed -->
+
+    </div> <!-- End Main Container -->
+
+    <!-- This script is required by Calendly to make the embed work -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+</body>
+</html>
